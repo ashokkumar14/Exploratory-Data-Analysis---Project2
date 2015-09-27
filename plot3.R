@@ -18,7 +18,7 @@ baltimoreEmissions <- ggplot(Totals, aes(year, Emissions, color = type))
 baltimoreEmissions <- baltimoreEmissions + geom_line() +
                         xlab("year") +
                         ylab(expression('Total PM'[2.5]*" Emissions")) +
-                        ggtitle('Total Emissions in Baltimore City, Maryland") for years 1999-2008')
+                        ggtitle('Total Emissions in Baltimore City, Maryland for years 1999-2008')
 
 print(baltimoreEmissions)
 

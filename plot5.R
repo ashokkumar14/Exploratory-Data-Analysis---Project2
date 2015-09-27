@@ -11,7 +11,7 @@ BaltimoreData <- NEI[NEI$fips=="24510" & NEI$type=="ON-ROAD",  ]
 ## Aggregare Emission data by year for Baltimore "ON ROAD" records
 TotalByYear <- aggregate(Emissions ~ year, BaltimoreData, sum)
 
-png("plot5.png")
+png("plot5.png", width = 800, height = 480)
 
 BaltimoreEmissions <- ggplot(TotalByYear, aes(factor(year), Emissions))
 
